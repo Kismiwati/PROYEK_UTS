@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/c"
+    tools:context=".WisataActivity">
+
+    <!--elemen ini digunkan untuk menampilkan teks, teksnya "WISATA INDONESIA"
+    layout width dan height menggunakan wrapcontent,
+    ukuran jarak marginTopnya 32dp,
+    untuk warna teks yang diberikan adalah warna hitam,
+    gaya teksnya tebal-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/wisata_indonesia"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--elemen ini digunkan untuk menampilkan teks, teksnya "Jam Gadang, Sumatra Barat"
+    layout width dan height menggunakan wrapcontent,
+     ukuran jarak marginTopnya 16dp,
+     ukuran teksnya 12sp
+     untuk warna teks yang diberikan adalah warna hitam,
+     gaya teksnya tebal-->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/jam_gadang_sumatra_barat"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <!--elemen ini digunakan untuk menampilkan gambar,
+    ukuran layout width 200dp, layout heigt 169dp,
+    ukuran margin start 4dp, marginTopnya 76dp,
+    untuk deskripsi gambarnya yaitu Candi borobudur,
+    untuk layout contraintStart toStartOfnya menggunakan perent-->
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="200dp"
+        android:layout_height="169dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="76dp"
+        android:contentDescription="@string/candi_borobudur"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/borobudur" />
+
+    <!--elemen ini digunkan untuk menampilkan teks, teksnya "Candi borobudur, Jawa Tengah"
+   layout width dan height menggunakan wrapcontent,
+   ukuran margintop 8dp, marginstart 16dp,
+   ukuran teksnya 12sp,
+   warna teks hitam,
+   untuk warna teks yang diberikan adalah warna hitam,
+   gaya teksnya tebal-->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/candi_borobudur_jawa_tengah"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <!--elemen ini digunakan untuk menampilkan gambar,
+    ukuran layout width 194dp, layout heigt 189dp,
+    ukuran margin start 4dp, marginTopnya 4dp,
+    untuk deskripsi gambarnya yaitu TEBING BREKSI,
+    untuk layout contraintStart toStartOfnya menggunakan perent-->
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="194dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/tebing_breksi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/breksi" />
+
+    <!--elemen ini digunkan untuk menampilkan teks, teksnya "Tebing Breksi, Yogyakarta"
+   layout width dan height menggunakan wrapcontent,
+   ukuran jarak marginTopnya 16dp, marginEndnya 40dp,
+   ukuran teksnya 12sp,
+   warna teks hitam,
+   untuk warna teks yang diberikan adalah warna hitam,
+   gaya teksnya tebal-->
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/tebing_breksi_yogyakarta"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <!--elemen ini digunakan untuk menampilkan gambar,
+    ukuran layout width 182dp, layout heigt 173dp,
+    ukuran margin start 72dp, marginTopnya 4dp,
+    untuk deskripsi gambarnya yaitu RAJA AMPAT,
+    untuk layout contraintStart toStartOfnya menggunakan perent-->
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="182dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="4dp"
+        android:contentDescription="@string/raja_ampat"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/rajaampat" />
+
+    <!--elemen ini digunkan untuk menampilkan teks, teksnya "Raja Ampat, Papua"
+   layout width dan height menggunakan wrapcontent,
+   ukuran jarak marginTopnya 4dp, marginEndnya 40dp
+   ukuran teksnya 12sp,
+   warna teks hitam,
+   untuk warna teks yang diberikan adalah warna hitam,
+   gaya teksnya tebal-->
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="40dp"
+        android:text="@string/raja_ampat_papua"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <!--elemen ini digunakan untuk menampilkan gambar,
+    ukuran layout width 196dp, layout heigt 195dp,
+    untuk deskripsi gambarnya yaitu JAM GADANG,
+    untuk layout contraintStart toStartOfnya menggunakan perent-->
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="196dp"
+        android:layout_height="195dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/jamgadang"
+        android:contentDescription="@string/jam_gadang" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

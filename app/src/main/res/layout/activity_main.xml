@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/c"
+    tools:context=".MainActivity">
+
+    <!-- texview elemen yang digunakan untuk menampilkan teks dalam layar,
+    text yang ditampilkan yaitu login, dengan warna text hitam dengan ukuran 22sp,
+    dengan id nya textView, layout width dan height menggunakan wrap content,
+    gaya teksnya tebal-->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <!--elemen widget yang digunakan untuk menampilkan sebuah gambar,
+     id gambarnya yaitu imageView, description kontennya Logo awal,
+     dengan scaletypenya fitXY, ukuran layout widthnya 191dp,
+      ukuran layout height 173dp, ukuran marginTopnya 32dp-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="191dp"
+        android:layout_height="173dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/logo_awal"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/b1" />
+
+    <!--EditText elemen yang digunakan untuk memasukkan teks,
+     editText dengan id teksPengguna, hint digunakan untuk memberikan petunjuk untuk diisikan,
+     ukuran layout widthnya 0dp dan height menggunakan wrap content,
+     ukuran margin top 24dp, ukuran marginEnd 24dp,
+     tipe data yang dimasukkan menggunakan textPersonName
+     -->
+    <EditText
+        android:id="@+id/teksPengguna"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/masukkan_nama_pengguna"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints="MASUKKAN NAMA PENGGUNA" />
+
+    <!--EditText elemen yang digunakan untuk memasukkan teks yang akan dimasukkan sebagai password
+    dengan hint "masukkan Password" untuk menunjukkan teks yang akan dimasukkan,
+    dengan id editTextnya teksPassword, tipe teks yang dimasukkan adalah numberPassword-->
+    <EditText
+        android:id="@+id/teksPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:hint="@string/masukkan_password"
+        android:inputType="numberPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksPengguna"
+        android:autofillHints="Masukkan Password" />
+
+    <!--Button adalah elemen yang digunakan untuk menampilkan halaman isian setelah mengisikan username dan password,
+    id button ini adalah btnLogin, teks buttonnya Login, dengan layout widthnya 0dp,
+    ukuran marginStart dan marginEnd 24dp.-->
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teksPassword" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

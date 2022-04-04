@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Proyek Uts</string>
+    <string name="data_pengguna">data_pengguna</string>
+    <string name="masukkan_nama_pengguna">Masukkan Nama Pengguna</string>
+    <string name="masukkan_password">Masukkan Password</string>
+    <string name="login">Login</string>
+    <string name="logo_awal">Logo Awal</string>
+    <string name="don_t_have_an_account">don\'t have an account?</string>
+    <string name="daftar">Daftar</string>
+    <string name="biodata">Biodata</string>
+    <string name="nama_kismiwati">Nama : Kismiwati</string>
+    <string name="fotoku">FOTOKU</string>
+    <string name="nim_203110053">NIM : 203110053</string>
+    <string name="prodi_rpla">Prodi : RPLA</string>
+    <string name="jenjang_d3">Jenjang : D3</string>
+    <string name="wisata_indonesia">WISATA INDONESIA</string>
+    <string name="jam_gadang_sumatra_barat">Jam Gadang, Sumatra Barat</string>
+    <string name="candi_borobudur_jawa_tengah">Candi Borobudur, Jawa Tengah</string>
+    <string name="candi_borobudur">CANDI BOROBUDUR</string>
+    <string name="tebing_breksi">TEBING BREKSI</string>
+    <string name="tebing_breksi_yogyakarta">Tebing Breksi, Yogyakarta</string>
+    <string name="raja_ampat">RAJA AMPAT</string>
+    <string name="raja_ampat_papua">Raja Ampat, Papua</string>
+    <string name="jam_gadang">JAM GADANG</string>
+    <string name="wisata">Wisata</string>
+    <string name="cek_github">Cek Github</string>
+
+
+</resources>
